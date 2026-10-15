@@ -36,14 +36,14 @@ except Exception:
 if not API_KEY:
     st.error("No encuentro tu clave de Gemini.")
     st.info(
-        "Crea el archivo `.streamlit/secrets.toml` y agrega tu clave:"
+        "Configura GEMINI_API_KEY en el archivo "
+        "`.streamlit/secrets.toml` o en los Secrets de Streamlit Cloud."
     )
     st.code(
-        'GEMINI_API_KEY = "tu_clave_de_gemini_aqui"',
+        'GEMINI_API_KEY = "TU_CLAVE_API"',
         language="toml",
     )
     st.stop()
-
 # ============================================================
 # 3. PERSONALIDAD DE NEXA
 # ============================================================
