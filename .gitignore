@@ -1,0 +1,14 @@
+# Secrets and local configuration
+.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local tooling
+.DS_Store
